@@ -2,6 +2,7 @@ const form = document.getElementById('formulario');
 const nomeContato = document.getElementById('nome-contato');
 const numeroContato = document.getElementById('numero-contato');
 const nome = [];
+const numero = [];
 
 let linhas = '';
 
@@ -35,7 +36,6 @@ function atualizaTabela(){
 function inserirLinha(){
     if (nome.includes(nomeContato.value)){
         alert('nome já inserido');
-
         nomeContato.value = '';
         numeroContato.value = '';
     } else {
