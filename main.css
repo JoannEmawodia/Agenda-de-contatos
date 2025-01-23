@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend Giga", serif;
+}
+
+.container{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;   
+}
+
+body {
+    background-color: rgb(223, 223, 168);
+    margin-top: 30px;
+}
+
+header input {
+    margin-top: 18px;
+    margin-bottom: 18px;
+    padding: 8px;
+}
+
+header button {
+    background-color: rgb(121, 110, 63);
+    color: #fff;
+    padding: 8px;
+    cursor: pointer;
+} 
+
+header button:hover{
+    background-color:rgb(133, 129, 113) ;
+}
+
+header {
+    margin-left: 100px;
+}
+
+table {
+    padding: 8px;
+    margin-bottom: 100px;
+    margin-top: 18px; 
+    width: 100%;
+}
+
+table th{
+    border-bottom: 2px solid #000;
+    padding: 16px;
+    font-size: 18px;
+}
+
+table td {
+    padding: 8px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+h1 {
+    margin-top:20px;
+}
