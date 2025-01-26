@@ -15,7 +15,6 @@ form.addEventListener('submit', function(e) {
         
     } else {
         inserirLinha();
-        atualizaTabela();
     
         nomeContato.style.border = '';
         nomeContato.value = '';
@@ -36,17 +35,16 @@ function atualizaTabela(){
 function inserirLinha(){
     if (nome.includes(nomeContato.value)){
         alert('nome já inserido');
-        nomeContato.value = '';
-        numeroContato.value = '';
     } else {
         nome.push(nomeContato.value);
         numero.push(parseInt(numeroContato.value));
-    }
+        
+        linha ='<tr>'
+        linha += `<td>${nomeContato.value}</td>`;
+        linha += `<td>${numeroContato.value}</td>`;
+        linha += `</tr>`;
 
-    linha ='<tr>'
-    linha += `<td>${nomeContato.value}</td>`;
-    linha += `<td>${numeroContato.value}</td>`;
-    linha += `</tr>`;
-
-    linhas += linha;
+        linhas += linha;    
+        atualizaTabela();
+        }  
 }
